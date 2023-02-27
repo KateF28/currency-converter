@@ -1,0 +1,23 @@
+@import "../../styles/variables"
+@import "../../styles/mixins"
+
+.header
+  &__logo
+    text-transform: uppercase
+    color: $lightMainColor
+    padding-top: var(--bs-navbar-brand-padding-y)
+    padding-bottom: var(--bs-navbar-brand-padding-y)
+    margin-right: var(--bs-navbar-brand-margin-end)
+    font-size: var(--bs-navbar-brand-font-size)
+    text-decoration: none
+    white-space: nowrap
+    font-weight: bold
+    &:hover
+      color: $lightMainColor
+    &:focus
+      color: $lightMainColor
+  &__rate
+    color: $mainColor
+    font-weight: bold
+    +r($maxXS)
+      font-size: 0.8rem
